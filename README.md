@@ -13,6 +13,10 @@ Doubloons Explained is an interactive lesson around doubloons, on the site you'l
 - Does more time equal more Doubloons?
 - And more!
 
+## Credits 
+
+A huge credit of this project goes to [@Aramshiva](https://github.com/aramshiva) for his work on the components and the layout along with how the slides moves! Go follow him!
+
 ## Development
 
 This site was made for a school project and was made in ~7 hours.
