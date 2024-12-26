@@ -1,19 +1,19 @@
 "use client";
 import { Definition } from "@/components/definition";
-import NaturalSelection from "@/components/naturalselection";
-import EnviormentalImpact from "@/components/enviromentalimpact";
+// import NaturalSelection from "@/components/naturalselection";
+// import EnviormentalImpact from "@/components/enviromentalimpact";
 import { Button } from "@/components/ui/button";
 import { Inter } from "next/font/google";
 import Markdown from "react-markdown";
 import { useState } from "react";
 import { Progress } from "@/components/ui/progress";
 import Image from "next/image";
-import Labelling from "@/components/labelling";
-import { PublicOpinion } from "@/components/publicopinion";
+// import Labelling from "@/components/labelling";
+// import { PublicOpinion } from "@/components/publicopinion";
 import Allergies from "@/components/allergies";
-import DNA from "@/components/dna";
-import Insulin from "@/components/insulin";
-import { Controversy } from "@/components/controversy";
+// import DNA from "@/components/dna";
+// import Insulin from "@/components/insulin";
+// import { Controversy } from "@/components/controversy";
 import Safety from "@/components/safety";
 
 const inter = Inter({ subsets: ["latin"] });
