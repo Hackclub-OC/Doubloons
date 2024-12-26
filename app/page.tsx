@@ -1,20 +1,14 @@
 "use client";
 import { Definition } from "@/components/definition";
-// import NaturalSelection from "@/components/naturalselection";
-// import EnviormentalImpact from "@/components/enviromentalimpact";
 import { Button } from "@/components/ui/button";
 import { Inter } from "next/font/google";
 import Markdown from "react-markdown";
 import { useState } from "react";
 import { Progress } from "@/components/ui/progress";
 import Image from "next/image";
-// import Labelling from "@/components/labelling";
-// import { PublicOpinion } from "@/components/publicopinion";
 import Allergies from "@/components/allergies";
-// import DNA from "@/components/dna";
-// import Insulin from "@/components/insulin";
-// import { Controversy } from "@/components/controversy";
 import Safety from "@/components/safety";
+import Video from "next-video";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -46,17 +40,10 @@ const slides = [
         width={200}
         height={200}
         alt="Text that says 'Doubloons Explained' and under it a copyright for OC 2024"
+        className="motion-preset-blur-right motion-duration-1000"
       />
     ),
   },
-  // {
-  //   title: "Introduction",
-  //   description: `* Humans have been modifying plants and animals for thousands of years! They have been doing this through **natural selection and selective breeding**
-  //   * Natural Selction is when animals or plants choose other organisms that are better and over time, creating a better species
-  //   * Selective Breeding is where humans choose two organisms with desirable traits and breed them together.
-  //     * We have been doing selective breeding since 8000 BCE`,
-  //   component: <NaturalSelection />,
-  // },
   {
     title: "Definition",
     description: `Let's first start by defining what a Doubloon is. 
@@ -84,7 +71,7 @@ const slides = [
         height="315"
         src="https://www.youtube.com/embed/ORnJFIxEeHQ?autoplay=1&controls=0&disablekb=1&fs=0&color=white&modestbranding=1"
         allow="autoplay; encrypted-media"
-        className="rounded-lg"
+        className="rounded-lg motion-preset-blur-right motion-duration-1000"
       />
     ),
   },
@@ -99,7 +86,7 @@ const slides = [
         width={700}
         height={600}
         alt="Text that says 'information about doubloons' and under it a copyright for OC 2024"
-        className="rounded-lg"
+        className="rounded-lg motion-preset-blur-right motion-duration-1000"
       />
     ),
   },
@@ -119,7 +106,7 @@ const slides = [
         width={600}
         height={600}
         alt="Text that says 'information about doubloons' and under it a copyright for OC 2024"
-        className="rounded-3xl"
+        className="rounded-3xl motion-preset-blur-right motion-duration-1000"
       />
     ),
   },
@@ -163,7 +150,7 @@ Beside is a image of doubloons [Hridya Agrawal](https://github.com/hridaya423) g
         width={600}
         height={600}
         alt="Text that says 'information about doubloons' and under it a copyright for OC 2024"
-        className="rounded-lg"
+        className="rounded-lg motion-preset-blur-right motion-duration-1000"
       />
     ),
   },
@@ -190,7 +177,7 @@ Various things are send to database when you are voting some of them are:
 
 **So you should check all of the things before writing your vote**, and I am not bluffing. [This is the link to the pr that does this](https://github.com/hackclub/high-seas/issues/243)
 
-Else if you get the pirate's curse you are done as your payout will be reduced by 50%
+Else **if you get the pirate's curse you are done as your payout will be reduced by 50%!**
     `,
     component: (
       <Image
@@ -198,8 +185,8 @@ Else if you get the pirate's curse you are done as your payout will be reduced b
         width={600}
         height={600}
         alt="Text that says 'information about doubloons' and under it a copyright for OC 2024"
-        className="rounded-lg"
-        style={{ clipPath: 'inset(4%)' }}
+        className="rounded-lg motion-preset-blur-right motion-duration-1000"
+        style={{ clipPath: "inset(4%)" }}
       />
     ),
   },
@@ -209,7 +196,7 @@ Else if you get the pirate's curse you are done as your payout will be reduced b
 
 **Now go and make some super cool projects!**
 `,
-    component: <></>,
+    component: <Video loop  src="/video/Meme.mp4" autoPlay />,
   },
 ];
 

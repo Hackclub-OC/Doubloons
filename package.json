@@ -20,6 +20,7 @@
     "motion": "^11.15.0",
     "mysql2": "^3.11.5",
     "next": "^14.2.21",
+    "next-video": "^2.0.0",
     "react": "^18.3.1",
     "react-countup": "^6.5.3",
     "react-dom": "^18.3.1",
@@ -27,7 +28,8 @@
     "react-youtube": "^10.1.0",
     "recharts": "^2.15.0",
     "tailwind-merge": "^2.5.5",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "tailwindcss-motion": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "^20.17.10",
