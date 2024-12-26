@@ -20,12 +20,23 @@ const inter = Inter({ subsets: ["latin"] });
 
 const slides = [
   {
-    title: "GMOs Explained",
-    description: `Welcome! This is an interactive website on genetically modified organisms. In this website you'll:
-* Learn What GMOs Are.
-* Learn the benefits of GMOs.
-* Learn the controversies around GMOs.
-* Play around with some interactive datasets.
+    title: (
+      <>
+        Doubloons Explained{" "}
+        <Image
+          className="inline"
+          src="https://highseas.hackclub.com/doubloon.svg"
+          width={40}
+          height={40}
+          alt="Doubloon"
+        />
+      </>
+    ),
+    description: `Welcome! This is an interactive website on doubloons. In this website you'll:
+* Learn What Doubloons Are.
+* Learn how can you earn Doubloons.
+* What are pro's and con's of creating a project.
+* Does more time equals more Doubloons ?.
 * And more!
 
 **Press the Start button to begin!**`,
@@ -34,104 +45,134 @@ const slides = [
         src="/logo.png"
         width={200}
         height={200}
-        alt="Text that says 'GMOs Explained' and under it a copyright for Aram Shiva 2024"
+        alt="Text that says 'Doubloons Explained' and under it a copyright for OC 2024"
       />
     ),
   },
-  {
-    title: "Introduction",
-    description: `* Humans have been modifying plants and animals for thousands of years! They have been doing this through **natural selection and selective breeding**
-    * Natural Selction is when animals or plants choose other organisms that are better and over time, creating a better species
-    * Selective Breeding is where humans choose two organisms with desirable traits and breed them together.
-      * We have been doing selective breeding since 8000 BCE`,
-    component: <NaturalSelection />,
-  },
+  // {
+  //   title: "Introduction",
+  //   description: `* Humans have been modifying plants and animals for thousands of years! They have been doing this through **natural selection and selective breeding**
+  //   * Natural Selction is when animals or plants choose other organisms that are better and over time, creating a better species
+  //   * Selective Breeding is where humans choose two organisms with desirable traits and breed them together.
+  //     * We have been doing selective breeding since 8000 BCE`,
+  //   component: <NaturalSelection />,
+  // },
   {
     title: "Definition",
-    description: `* Let's first start by defining what a GMO is. 
-* In simple terms, an GMO is a organism with it's genes modified in some sort of way
-  * Examples of these genes being modified are making crops more resistant to pests or diseases or making them grow faster
-* But how is genetic modification done?
-* And what are the benefits of GMOs?
+    description: `Let's first start by defining what a Doubloon is. 
+* In simple terms, a doubloon is a gold coin which was used for payment in the Spanish Empire.
+* But why is it used in high seas (hackclub event) ?
+* And how can you earn it?
 * Let's find out!`,
     component: (
       <Definition
-        term="genetic modification"
-        definition="the use of genetic engineering to change how a plant or living creature develops by changing the information in its genes"
+        term="Doubloons"
+        definition=" The doubloon was a two-escudo Spanish gold coin worth approximately $4  or 32 reales, and weighing 6.766 grams of 22-karat gold. "
       />
     ),
   },
   {
-    title: "Process of GM",
-    description: `There are a couple ways to GM an organism.
-* One way is cross breeding.
-  * This is done by choosing two organisms with desirable traits and breeding them together
-  * An example is in 2000 BCE, where farmers crossbred weed to make kale and other greens!
-* Another more popular method when referring to GMOs is genetic engineering.
-  * This allows scientists to copy DNA from one organism and put it into another.`,
+    title: "Using Doubloons in High Seas",
+    description: `At the start of the [High Seas](https://highseas.hackclub.com), we started looking for some digital currency to pay for our projects. 
+* As the complete high seas is **Pirate themed** as we sail ships and get paid, we thought that a coin would be a good idea.
+  * Then as a result we started looking for a something that can be used.  
+* If you have seen the [Pirates of the Caribbean](https://en.wikipedia.org/wiki/Pirates_of_the_Caribbean_(film_series)) Gold Coins (Doubloons then) were used. 
+  * The currency that was used is Doubloons and we started using it in High Seas.`,
     component: (
       <iframe
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/_T0Pzh88lHw?autoplay=1&controls=0&disablekb=1&fs=0&color=white&modestbranding=1"
+        src="https://www.youtube.com/embed/ORnJFIxEeHQ?autoplay=1&controls=0&disablekb=1&fs=0&color=white&modestbranding=1"
         allow="autoplay; encrypted-media"
+        className="rounded-lg"
       />
     ),
   },
   {
-    title: "Benefits of GMOs",
-    description: `GMOs are actually really helpful!
-- They can help prevent diseases or risk of drought
-- They can help grow more and bigger crops
-- They can help crops become more resistant to pests
-- They can help crops grow faster
-- They can help crops grow in harsher conditions
-- They can help crops become more nutritious
-- They can help crops become more flavorful
+    title: "A little info about Doubloons",
+    description: `You can read more about the image [by clicking here](https://www.vocabulary.com/dictionary/doubloon).
 
-**So why have you been told as a kid that they are bad?**`,
-    component: <Insulin />,
+**So how can you earn them in high seas?**`,
+    component: (
+      <Image
+        src="/info.png"
+        width={700}
+        height={600}
+        alt="Text that says 'information about doubloons' and under it a copyright for OC 2024"
+        className="rounded-lg"
+      />
+    ),
   },
   {
-    title: "Controversy",
-    description: `There is ALOT of controversy around GMOs.
-Some controversies include:
-* Are they safe to eat?
-* What is the environmental impact?
-* Does it affect other plants
-* Can it cause allergies?
-* Should they be labeled?
+    title: "How to earn Doubloons in High ? ",
+    description: `To earn doubloons the rule is simple **Create and Ship projects**.
 
-***So let's look into each one of these controversies and see if they are an geninue concern***`,
-    component: <Controversy />,
+* You need to code something awesome while tracking the time you spend coding.
+* After that ship it on the [High Seas website](https://highseas.hackclub.com). 
+* Your project then will go into battles and peers will vote for or against it.
+* Your project will get doubloons based on the votes it gets ranging from **5 to 27 doubloons per hour of your work**.
+
+***So does more hours  equals more doubloons ?***`,
+    component: (
+      <Image
+        src="/ship.png"
+        width={600}
+        height={600}
+        alt="Text that says 'information about doubloons' and under it a copyright for OC 2024"
+        className="rounded-3xl"
+      />
+    ),
   },
   {
-    title: "Safety for Consumption",
-    description: `The one you may of heard of are that GMOs are unsafe to eat.
-* This is actually not true! It's under scientific consensus and the FDA that GMOs are safe to eat.
-* The FDA has been regulating GMOs since 1992 and has approved over 100 GM products.
-* The World Health Organization has also stated that GM foods are no more risky than conventional foods.
+    title: "Does more hours equals more Doubloons ?",
+    description: `Now you know how you get doubloons you might think that more hours equals more doubloons. 
+    
+Here's **a little proof of why that is not true**.
+  
+    Let's say you spend 10 hours coding but the tracker only tracked
+    for 5 hours of your work. So now your project will go in the 
+    wonderdome and it will go against project with similar time. Next
+    as peers will start voting for your project our project will 
+    perform well than other projects.
 
-What? So why are they bad?`,
+    So in this case you will get more doubloons than you would have 
+    due to the positive numbers of votes your project has got.
+
+Is the condition also true for reverse situations?`,
     component: <Safety />,
   },
   {
-    title: "Environmental Impact",
-    description: `* Thousands of Genetically Modified Products are traded internationally each year
-* This means millions of pesticides are used to protect these crops
-* This has a huge impact on the environment
-* But how?`,
-    component: <EnviormentalImpact />,
+    title: "Is the condition also true for reverse situations?",
+    description: `Yes, It is also true for reverse situations.
+    
+    Let's say you spend 5 hours coding but you have additionally selected 
+    another project you have worked on before. So the total time you have 
+    for the project is 10 hours (while you have only spent 5 hours). 
+    
+    Now as your project will go into the wonderdome it will get fewer 
+    votes as it will be against the project with 10 hours of coding and
+    your project only has 5 hours of codework. 
+    
+    This will result in less votes for your project and as a result 
+    less doubloons. 
+
+Beside is a image of doubloons Hridya Agrawal got for 2 of his projects! `,
+    component: (
+      <Image
+        src="/reward.png"
+        width={600}
+        height={600}
+        alt="Text that says 'information about doubloons' and under it a copyright for OC 2024"
+        className="rounded-lg"
+      />
+    ),
   },
   {
-    title: "Gene Flow",
-    description: `Gene Flow is when a GMO plant's genes get unintentionally transferred to another plant!
-* This can happen through pollination, seeds or even roots.
-* This can cause genetic modification to contaminate other plants
+    title: "Then how the hell I can earn the maximum amount of doubloons?",
+    description: `Well **if more hours != more doubloons** there is one thing if you got it more then you will get more doubloons.
 
-**How do we solve this?**
-* We can seperate crop fields far apart from each other to prevent two crops from transferring genes.`,
-    component: <DNA />,
+- More votes definitely means more doubloons.`,
+    component: <Allergies />,
   },
   {
     title: "Allerigies",
@@ -139,30 +180,31 @@ What? So why are they bad?`,
 * This is actually **false**! According to the FDA, GMO foods are no more likely to cause allergies than non-GMOs.
 * GMOs are tested for allergens before they can be sold!
 * So, actually GMOs don't cause allergies!`,
-    component: <Allergies />,
+    // component: <Allergies />,
   },
-  {
-    title: "Labeling",
-    description: `One of the biggest controversies around GMOs are if they should be labeled or not.
-* Some people think that they should know if they are eating a GM product.
-* And with GM products on a rise (check the chart on the left!), it's becoming more and more hard to know if your food is gentically modified.
-* Thankfully as of 2022, we have the [The National Bioengineered Food Disclosure Standard](https://www.ams.usda.gov/rules-regulations/be) which regulates the labeling of GM products.
-* This means every GM product must be labeled as such.
-* But is this enough?`,
-    component: <Labelling />,
-  },
-  {
-    title: "Public Opinion",
-    description: `Public's opinion on GMOs are mixed.
-* A survey conducted by Pew Research Center in 2016 (see left) found that 27% of americans buy Non-GMO products
-* This means that people **really** care about what they are eating!
-* So labeling is a big deal for them. They want to know if they are eating a GM product or not.`,
-    component: <PublicOpinion />,
-  },
+  //   {
+  //     title: "Labeling",
+  //     description: `One of the biggest controversies around GMOs are if they should be labeled or not.
+  // * Some people think that they should know if they are eating a GM product.
+  // * And with GM products on a rise (check the chart on the left!), it's becoming more and more hard to know if your food is gentically modified.
+  // * Thankfully as of 2022, we have the [The National Bioengineered Food Disclosure Standard](https://www.ams.usda.gov/rules-regulations/be) which regulates the labeling of GM products.
+  // * This means every GM product must be labeled as such.
+  // * But is this enough?`,
+  //     component: <Labelling />,
+  //   },
+  //   {
+  //     title: "Public Opinion",
+  //     description: `Public's opinion on GMOs are mixed.
+  // * A survey conducted by Pew Research Center in 2016 (see left) found that 27% of americans buy Non-GMO products
+  // * This means that people **really** care about what they are eating!
+  // * So labeling is a big deal for them. They want to know if they are eating a GM product or not.`,
+  //     component: <PublicOpinion />,
+  //   },
   {
     title: "Conclusion",
-    description: `Thanks for reading this interactive lesson on GMOs!
-You can see the sources used [here](/references)
+    description: `Thanks for reading this interactive lesson on Doubloons.
+
+**Now go and make some super cool projects!**
 `,
     component: <></>,
   },
@@ -177,10 +219,13 @@ export default function Page() {
 
   return (
     <>
-      <div className={`md:hidden flex items-center justify-center h-screen text-center ${inter.className}`}>
-        GMOs Explained! is not optimized for mobile. Please view on a desktop. (sorry it{"'"}s inconvenient but I promise it{"'"}s worth it!)!
+      <div
+        className={`lg:hidden flex items-center justify-center h-screen text-center ${inter.className}`}
+      >
+        GMOs Explained! is not optimized for mobile. Please view on a desktop.
+        (sorry it{"'"}s inconvenient but I promise it{"'"}s worth it!)!
       </div>
-      <div className={`hidden md:block p-20 ${inter.className}`}>
+      <div className={`hidden lg:block p-20 ${inter.className}`}>
         <div className="flex gap-4">
           <div className="prose flex-1 rounded-xl p-5 h-24 md:h-48 lg:h-[35rem] flex flex-col justify-center relative">
             <Progress
@@ -194,17 +239,20 @@ export default function Page() {
               <Markdown>{slides[currentSlide].description}</Markdown>
             </div>
             <div>
-            {currentSlide !== 0 ? (
-                <Button onClick={() => setCurrentSlide(prev => prev - 1)} className="w-20 bg-white text-slate-700 border border-slate-700 hover:bg-slate-300">
-                Back
+              {currentSlide !== 0 ? (
+                <Button
+                  onClick={() => setCurrentSlide((prev) => prev - 1)}
+                  className="w-20 bg-white text-slate-700 border border-slate-700 hover:bg-slate-300"
+                >
+                  Back
                 </Button>
-            ) : null}
-            <span className="px-2"/>
-            {currentSlide !== slides.length - 1 && (
-              <Button onClick={nextSlide} className="w-20">
-                {currentSlide === 0 ? "Start" : "Next"}
-              </Button>
-            )}
+              ) : null}
+              <span className="px-2" />
+              {currentSlide !== slides.length - 1 && (
+                <Button onClick={nextSlide} className="w-20">
+                  {currentSlide === 0 ? "Start" : "Next"}
+                </Button>
+              )}
             </div>
           </div>
           <div className="flex-1 bg-slate-50 rounded-xl p-5 flex justify-center items-center">

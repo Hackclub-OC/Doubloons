@@ -15,8 +15,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "GMOs Explained!",
-  description: "An interactive lesson on GMOs and how they affect you and me.",
+  title: "Doubloons Explained!",
+  description: "An interactive lesson on Doubloons and how they can be earned in hackclub high seas.",
 };
 
 export default function RootLayout({
