@@ -215,7 +215,7 @@ export default function Page() {
           width={200}
           height={200}
           alt="HC Flag"
-          className="absolute top-0 left-5 w-36 h-20 motion-preset-seesaw motion-duration-500"
+          className="absolute top-0 left-5 w-36 h-20 hover:motion-preset-seesaw hover:motion-duration-500"
         />
       </div>
       <div
