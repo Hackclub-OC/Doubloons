@@ -156,7 +156,7 @@ Is the condition also true for reverse situations?`,
     This will result in less votes for your project and as a result 
     less doubloons. 
 
-Beside is a image of doubloons Hridya Agrawal got for 2 of his projects! `,
+Beside is a image of doubloons [Hridya Agrawal](https://github.com/hridaya423) got for 2 of his projects! `,
     component: (
       <Image
         src="/reward.png"
@@ -171,35 +171,38 @@ Beside is a image of doubloons Hridya Agrawal got for 2 of his projects! `,
     title: "Then how the hell I can earn the maximum amount of doubloons?",
     description: `Well **if more hours != more doubloons** there is one thing if you got it more then you will get more doubloons.
 
-- More votes definitely means more doubloons.`,
+- More votes definitely means more doubloons.
+
+**You can get more votes by making cool and useful projects** at the same time. 
+
+Need some tricks to earn even more ? `,
     component: <Allergies />,
   },
   {
-    title: "Allerigies",
-    description: `Another big concern is that GMOs can cause allergies.
-* This is actually **false**! According to the FDA, GMO foods are no more likely to cause allergies than non-GMOs.
-* GMOs are tested for allergens before they can be sold!
-* So, actually GMOs don't cause allergies!`,
-    // component: <Allergies />,
+    title: "Some tricks to earn more doubloons.",
+    description: `Well as making projects matters voting properly in the [Wonderdome](https://highseas.hackclub.com/wonderdome) is also important.
+
+I should not tell you the following things but I think this will help you get the pirate's blessing to boost your payout by 20%.
+
+Various things are send to database when you are voting some of them are: 
+  - If you have opened the demo link, the github repository and read the readme file or not.
+  - If you are just writing some thing based on the readme file or the demo link chances are you might not get the pirate's blessing.
+
+**So you should check all of the things before writing your vote**, and I am not bluffing. [This is the link to the pr that does this](https://github.com/hackclub/high-seas/issues/243)
+
+Else if you get the pirate's curse you are done as your payout will be reduced by 50%
+    `,
+    component: (
+      <Image
+        src="/voting.jpg"
+        width={600}
+        height={600}
+        alt="Text that says 'information about doubloons' and under it a copyright for OC 2024"
+        className="rounded-lg"
+        style={{ clipPath: 'inset(4%)' }}
+      />
+    ),
   },
-  //   {
-  //     title: "Labeling",
-  //     description: `One of the biggest controversies around GMOs are if they should be labeled or not.
-  // * Some people think that they should know if they are eating a GM product.
-  // * And with GM products on a rise (check the chart on the left!), it's becoming more and more hard to know if your food is gentically modified.
-  // * Thankfully as of 2022, we have the [The National Bioengineered Food Disclosure Standard](https://www.ams.usda.gov/rules-regulations/be) which regulates the labeling of GM products.
-  // * This means every GM product must be labeled as such.
-  // * But is this enough?`,
-  //     component: <Labelling />,
-  //   },
-  //   {
-  //     title: "Public Opinion",
-  //     description: `Public's opinion on GMOs are mixed.
-  // * A survey conducted by Pew Research Center in 2016 (see left) found that 27% of americans buy Non-GMO products
-  // * This means that people **really** care about what they are eating!
-  // * So labeling is a big deal for them. They want to know if they are eating a GM product or not.`,
-  //     component: <PublicOpinion />,
-  //   },
   {
     title: "Conclusion",
     description: `Thanks for reading this interactive lesson on Doubloons.
