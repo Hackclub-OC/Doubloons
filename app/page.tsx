@@ -196,7 +196,7 @@ Else **if you get the pirate's curse you are done as your payout will be reduced
 
 **Now go and make some super cool projects!**
 `,
-    component: <Video loop  src="/video/Meme.mp4" autoPlay />,
+    component: <Video loop src="/video/Meme.mp4" autoPlay />,
   },
 ];
 
@@ -209,6 +209,15 @@ export default function Page() {
 
   return (
     <>
+      <div className="relative">
+        <Image
+          src="/hc-flag.png"
+          width={200}
+          height={200}
+          alt="HC Flag"
+          className="absolute top-0 left-5 w-36 h-20 motion-preset-seesaw motion-duration-500"
+        />
+      </div>
       <div
         className={`lg:hidden flex items-center justify-center h-screen text-center ${inter.className}`}
       >
