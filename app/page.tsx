@@ -212,13 +212,14 @@ export default function Page() {
   return (
     <>
       <div className="relative">
+        <a href="https://hackclub.com" target="_blank">
         <Image
           src="/hc-flag.png"
           width={200}
           height={200}
           alt="HC Flag"
-          className="absolute top-0 left-5 w-36 h-20 hover:motion-preset-seesaw hover:motion-duration-500"
-        />
+          className="absolute top-0 left-5 w-36 h-20 hover:animate-[wave-flag_0.5s_linear_infinite_alternate]"
+        /></a>
       </div>
       <div
         className={`lg:hidden flex items-center justify-center h-screen text-center ${inter.className}`}
@@ -264,3 +265,4 @@ export default function Page() {
     </>
   );
 }
+

@@ -76,3 +76,15 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+
+@keyframes wave-flag {
+  0% {
+    transform: rotate(0);
+    transform-origin: top left;
+  }
+  100% {
+    transform: rotate(-5deg);
+    transform-origin: top left;
+  }
+}
