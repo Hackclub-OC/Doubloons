@@ -187,7 +187,7 @@ Else **if you get the pirate's curse you are done as your payout will be reduced
         width={600}
         height={600}
         alt="Text that says 'information about doubloons' and under it a copyright for OC 2024"
-        className="rounded-3xl motion-preset-blur-right motion-duration-1000"
+        className=" motion-preset-blur-right motion-duration-1000"
         style={{ clipPath: "inset(4%)" }}
       />
     ),
