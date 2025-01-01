@@ -35,6 +35,7 @@ const slides = [
 
 **Press the Start button to begin!**`,
     component: (
+      <div className="dark:bg-white p-10 rounded-lg">
       <Image
         src="/logo.png"
         width={200}
@@ -42,6 +43,7 @@ const slides = [
         alt="Text that says 'Doubloons Explained' and under it a copyright for OC 2024"
         className="motion-preset-blur-right motion-duration-1000"
       />
+      </div>
     ),
   },
   {
@@ -185,7 +187,7 @@ Else **if you get the pirate's curse you are done as your payout will be reduced
         width={600}
         height={600}
         alt="Text that says 'information about doubloons' and under it a copyright for OC 2024"
-        className="rounded-lg motion-preset-blur-right motion-duration-1000"
+        className="rounded-3xl motion-preset-blur-right motion-duration-1000"
         style={{ clipPath: "inset(4%)" }}
       />
     ),
@@ -226,7 +228,7 @@ export default function Page() {
       </div>
       <div className={`hidden lg:block p-20 ${inter.className}`}>
         <div className="flex gap-4">
-          <div className="prose flex-1 rounded-xl p-5 h-24 md:h-48 lg:h-[35rem] flex flex-col justify-center relative">
+          <div className="prose dark:prose-invert flex-1 rounded-xl p-5 h-24 md:h-48 lg:h-[35rem] flex flex-col justify-center relative">
             <Progress
               value={(currentSlide / (slides.length - 1)) * 100}
               className="w-24 h-1"
@@ -241,7 +243,7 @@ export default function Page() {
               {currentSlide !== 0 ? (
                 <Button
                   onClick={() => setCurrentSlide((prev) => prev - 1)}
-                  className="w-20 bg-white text-slate-700 border border-slate-700 hover:bg-slate-300"
+                  className="w-20 bg-white dark:bg-black  text-slate-700 dark:text-slate-200 border border-slate-700 hover:bg-slate-300"
                 >
                   Back
                 </Button>
@@ -254,7 +256,7 @@ export default function Page() {
               )}
             </div>
           </div>
-          <div className="flex-1 bg-slate-50 rounded-xl p-5 flex justify-center items-center">
+          <div className="flex-1 bg-slate-50 dark:bg-black rounded-xl p-5 flex justify-center items-center">
             {slides[currentSlide].component}
           </div>
         </div>
